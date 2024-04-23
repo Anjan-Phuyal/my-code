@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Anjan Phuyal</title>
+</head>
+<body>
+    <section>
+      <div id="header">
+         <div class="container">
+            <nav>
+                <img src="anjan logo imported.png" class="logo">
+                <ul><strong>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </strong>   
+                </ul>
+            </nav>
+         </div>
+      </div>
+      <!-- nav bar ends and start homepage----------------------------- -->
+<div class="homepage">
+    <div class="homepage-text">
+        <div id="job-title">
+            <Strong >Front-End Web Developer</Strong>
+        </div>
+        <div id="short-intro">
+            My name is Anjan Phuyal a front-end developer based on Nepal. <br>I have knowledge about Html and css.
+        </div>
+        <div id="bottom">  
+            <strong id="techstack">Tech Stack |</strong>
+            <div id="htcss"><img src="htcss-home.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="homepage-img"><img src="Anjanhome.png" alt="">
+    </div>
+
+
+</div>
+<!-- about me section starts here-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="anjanabout.png" alt="">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About me</h1>
+                <p>"Skilled Front End Web Developer from Nepal proficient in HTML and CSS. Equipped with a keen <br>eye for design and functionality, adept at creating visually appealing and user-friendly interfaces.<br> Passionate about crafting seamless web experiences and dedicated to staying updated with <br>the latest industry trends and technologies."</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS</span><br>Developing Website</li>
+                        <li><span>Video Editing</span><br>Simple effects videos using premiere pro</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>NOT Worked yet</span><br>Developing Projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>School Level</li>
+                        <li><span>2022</span><br>+2 </li>
+                        <li><span>2022 till now</span><br>Bachelors of Computer Application</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------services page----------------------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitles">My Services</h1>
+        <div class="service-list">   
+        </div>
+    </div>
+</div>
+<!-- --------------------javascript for about me page starts------------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document .getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>

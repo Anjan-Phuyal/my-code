@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+   background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans',  sans-serif;
+}
+.logo{
+    width: 90px;
+}
+.container{
+    padding: 10px 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lucida Sans',  sans-serif;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(47, 27, 65);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 4px;
+    background:  rgb(240, 184, 98);
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+ /* Homepage section */
+ .homepage{
+    display: flex;
+}
+.homepage-text{
+    margin-top: 240px;
+    margin-left: 400px;
+    
+}
+.homepage-text #job-title{
+    font-size: 35px;
+    font-family: 'Lucida Sans',  sans-serif;
+}
+.homepage-text #short-intro{
+font-size: 17px;
+margin-top: 10px;
+font-family: 'Lucida Sans',  sans-serif;
+}
+.homepage-text #bottom{
+    margin-top: 60px;
+    display: flex;
+    font-size: 20px;
+}
+.homepage-text #bottom img{
+    margin-left: 15px;
+    width: 70px;
+    height: 35px;
+}
+.homepage-img img{
+    width: 60%;
+    height: 80%;
+    border-radius: 40%;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-color: rgb(242, 214, 177);
+}
+.homepage-img img:hover{
+    background-color: rgb(240, 184, 98);
+    transition: 1s;
+    border-radius: 50%;
+}
+/* about me css start here------------------------------------- */
+#about{
+    padding: 150px 0;
+    color:  rgb(47, 27, 65);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col1{
+flex-basis: 35%;
+font-family: 'Lucida Sans',  sans-serif;
+}
+.about-col1 img{
+    width: 60%;
+    border-radius:20px ;
+    background-color: rgb(112, 105, 94);
+    margin-left: 40%;
+}
+.about-col2{
+    flex-basis: 60%;
+    margin-right: 0px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+   font-family: 'Gill Sans', sans-serif
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0%;
+    height: 4px;
+    background:  rgb(113, 25, 148);
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:rgb(113, 25, 148);
+    font-size: 16px;
+    font-family: 'Lucida Sans',  sans-serif;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ---------services css------------------ */
+#services{
+    
+}
